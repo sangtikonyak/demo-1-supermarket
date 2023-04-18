@@ -30,7 +30,6 @@ public class CustomerController {
             responseEntity = new ResponseEntity(customer , HttpStatus.CREATED);
         } catch (CustomerAlreadyExistsException e) {
             throw new CustomerAlreadyExistsException();
-
         }
         catch (Exception e)
         {
